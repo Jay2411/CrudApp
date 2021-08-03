@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+<body>
+  <center>
+  <hr><b>Complaint Update</b><hr>
+    <form action="/edit" method="POST" id="productForm">
+        <div class="control-group">
+            <input type="text" name="id" class="form-control" id="id" placeholder="your id" required>
+        </div>
+        <br>
+        <div class="control-group">
+          <input type="text" name="title" class="form-control" id="title" placeholder="Title" required />
+        </div>
+        <br>
+        <div class="control-group">
+          <input type="text" name="discription" class="form-control" id="discription" placeholder="Discription" required />
+        </div>
+        <br>
+        <div class="control-group">
+          <input type="text" name="created_by" class="form-control" id="created_by" placeholder="Created By"
+            required />
+        </div>
+        <br>
+        <div class="control-group">
+          <input type="text" name="completed_by" class="form-control" id="completed_by" placeholder="Completed By" required />
+        </div>
+        <br>
+        <div class="control-group">
+          <input type="datetime-local" name="datetime" class="form-control" id="datetime" placeholder="DateTime" required />
+        </div>
+        <br>
+        <div class="control-group">
+          <label for="active">Active</label>
+          <input type="radio" name="status" class="form-control" id="status" value="active" placeholder="Status" required>
+          <label for="pending">Pending</label>
+          <input type="radio" name="status" class="form-control" id="status" value="pending" placeholder="Status" required>
+          <label for="completed">Completed</label>
+          <input type="radio" name="status" class="form-control" id="status" value="completed" placeholder="Status" required>
+        </div>
+        <br>
+        <br>
+        <div>
+          <button class="btn" type="submit" value="Edit" id="sendMessageButton">Update Data</button>
+        </div>
+      </form>
+    </center>
+</body>
+</html>
